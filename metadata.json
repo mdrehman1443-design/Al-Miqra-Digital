@@ -1,0 +1,6 @@
+{
+  "name": "Al-Miqra Digital - Madrasa Management",
+  "description": "مدارس حفظ و ناظرہ مینجمنٹ سسٹم - Comprehensive management system for Hifz & Nazra seminaries, tracking daily lessons (Sabaq, Sabqi, Manzil), attendance, fees, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
