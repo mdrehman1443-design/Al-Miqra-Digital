@@ -166,8 +166,12 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
           <div className="space-y-4 max-w-3xl">
             {/* Header Meta Badge */}
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-800/80 text-amber-300 text-xs font-semibold border border-amber-400/30">
-                <Sparkles className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-800/90 text-amber-300 text-xs font-bold border border-amber-400/40 shadow-xs">
+                <BookOpen className="w-3.5 h-3.5 text-amber-300" />
+                <span>Al-Miqra Digital (المقرا ڈیجیٹل)</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 text-emerald-200 text-xs border border-emerald-700/60">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                 <span>1447 ھجری / 2026ء</span>
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-900/90 text-emerald-200 text-xs border border-emerald-700/60">

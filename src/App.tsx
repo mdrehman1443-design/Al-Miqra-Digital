@@ -478,12 +478,20 @@ export default function App() {
 
       {/* Footer */}
       <footer className="mt-auto border-t border-slate-200 bg-white py-4 text-center text-xs text-slate-500 no-print">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div className="font-nastaliq text-emerald-950 font-bold">
-            {madrasa.nameUrdu} · {madrasa.branch}
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2.5">
+          <div className="flex items-center gap-2">
+            <span className="font-nastaliq text-emerald-950 font-bold text-sm">
+              مدرسہ تعلیم القرآن سورگ
+            </span>
+            <span className="text-slate-400">·</span>
+            <span className="text-slate-600 font-sans font-medium text-[11px]">
+              Madrasah Taleem-ul-Quran Surag
+            </span>
           </div>
-          <div className="text-[11px] text-slate-500 font-nastaliq">
-            نگرانِ اعلیٰ شعبہ حفظ: <strong>{madrasa.supervisorNameUrdu}</strong> · Al-Miqra Digital
+          <div className="text-[11px] text-slate-600 flex items-center gap-2">
+            <span>نظام: <strong className="text-emerald-900 font-sans">Al-Miqra Digital (المقرا ڈیجیٹل)</strong></span>
+            <span className="text-slate-400">|</span>
+            <span className="font-nastaliq">نگرانِ اعلیٰ شعبہ حفظ: <strong className="text-emerald-900">{madrasa.supervisorNameUrdu}</strong></span>
           </div>
         </div>
       </footer>

@@ -3,6 +3,8 @@ import { AppLanguage } from '../types';
 export interface TranslationDictionary {
   appName: string;
   appNameEn: string;
+  madrasaName: string;
+  madrasaNameEn: string;
   tagline: string;
   dashboard: string;
   lessons: string;
@@ -52,8 +54,10 @@ export interface TranslationDictionary {
 
 export const TRANSLATIONS: Record<AppLanguage, TranslationDictionary> = {
   ur: {
-    appName: 'مدرسہ تعلیم القرآن سورگ',
-    appNameEn: 'Madrasah Taleem-ul-Quran Surag',
+    appName: 'المقرا ڈیجیٹل',
+    appNameEn: 'Al-Miqra Digital',
+    madrasaName: 'مدرسہ تعلیم القرآن سورگ',
+    madrasaNameEn: 'Madrasah Taleem-ul-Quran Surag',
     tagline: 'مدارس حفظ و ناظرہ قرآن کریم و علوم اسلامیہ',
     dashboard: 'مرکزی ڈیش بورڈ',
     lessons: 'یومیہ اسباق',
@@ -101,8 +105,10 @@ export const TRANSLATIONS: Record<AppLanguage, TranslationDictionary> = {
     completedParas: 'حفظ شدہ پارے',
   },
   ar: {
-    appName: 'مدرسة تعليم القرآن سورغ',
-    appNameEn: 'Madrasah Taleem-ul-Quran Surag',
+    appName: 'المقرا ديجيتال',
+    appNameEn: 'Al-Miqra Digital',
+    madrasaName: 'مدرسة تعليم القرآن سورغ',
+    madrasaNameEn: 'Madrasah Taleem-ul-Quran Surag',
     tagline: 'نظام إدارة حلقات تحفيظ وتجويد القرآن الكريم والعلوم الشرعية',
     dashboard: 'لوحة التحكم المركزية',
     lessons: 'السماع اليومي للدروس',
@@ -150,8 +156,10 @@ export const TRANSLATIONS: Record<AppLanguage, TranslationDictionary> = {
     completedParas: 'الأجزاء المتقنة',
   },
   en: {
-    appName: 'Madrasah Taleem-ul-Quran Surag',
-    appNameEn: 'مدرسہ تعلیم القرآن سورگ',
+    appName: 'Al-Miqra Digital',
+    appNameEn: 'المقرا ڈیجیٹل',
+    madrasaName: 'Madrasah Taleem-ul-Quran Surag',
+    madrasaNameEn: 'مدرسہ تعلیم القرآن سورگ',
     tagline: 'Hifz & Nazra Quran Memorization Management System',
     dashboard: 'Dashboard',
     lessons: 'Daily Lessons',
