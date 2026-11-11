@@ -23,6 +23,7 @@ import { FeesView } from './components/fees/FeesView';
 import { ReportCardModal } from './components/reports/ReportCardModal';
 import { WhatsAppModal } from './components/modals/WhatsAppModal';
 import { MadrasaSettingsModal } from './components/modals/MadrasaSettingsModal';
+import { ShareAppModal } from './components/modals/ShareAppModal';
 
 export default function App() {
   const [lang, setLang] = useState<AppLanguage>('ur');
@@ -44,6 +45,7 @@ export default function App() {
   const [reportCardStudent, setReportCardStudent] = useState<Student | null>(null);
   const [whatsAppStudent, setWhatsAppStudent] = useState<Student | null>(null);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState<boolean>(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
 
   // Sync HTML dir and lang
   useEffect(() => {
@@ -302,6 +304,7 @@ export default function App() {
         setLang={setLang}
         onOpenNewLesson={() => setActiveTab('lessons')}
         onOpenSettings={() => setIsSettingsModalOpen(true)}
+        onOpenShareModal={() => setIsShareModalOpen(true)}
       />
 
       {/* Main Container */}
@@ -473,6 +476,15 @@ export default function App() {
           onUpdateMadrasa={handleUpdateMadrasa}
           onResetAll={handleResetAll}
           onClose={() => setIsSettingsModalOpen(false)}
+        />
+      )}
+
+      {/* Share Application Portal Link Modal */}
+      {isShareModalOpen && (
+        <ShareAppModal
+          madrasa={madrasa}
+          lang={lang}
+          onClose={() => setIsShareModalOpen(false)}
         />
       )}
 

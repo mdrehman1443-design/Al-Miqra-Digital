@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Plus, Globe, School } from 'lucide-react';
+import { BookOpen, Plus, Globe, School, Share2 } from 'lucide-react';
 import { MadrasaProfile, AppLanguage } from '../../types';
 import { TRANSLATIONS } from '../../utils/translations';
 
@@ -11,6 +11,7 @@ interface NavbarProps {
   setLang: (lang: AppLanguage) => void;
   onOpenNewLesson: () => void;
   onOpenSettings: () => void;
+  onOpenShareModal: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -21,6 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   setLang,
   onOpenNewLesson,
   onOpenSettings,
+  onOpenShareModal,
 }) => {
   const t = TRANSLATIONS[lang];
 
@@ -158,6 +160,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 English
               </button>
             </div>
+
+            {/* Share Portal Link Button */}
+            <button
+              onClick={onOpenShareModal}
+              className="px-2.5 py-1.5 text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 shadow-2xs font-bold text-xs"
+              title="پورٹل کا لنک شیئر کریں / Share Portal Link"
+            >
+              <Share2 className="w-3.5 h-3.5 text-emerald-700" />
+              <span>{lang === 'en' ? 'Share Link' : 'شیئر لنک'}</span>
+            </button>
 
             {/* Seminary settings */}
             <button
